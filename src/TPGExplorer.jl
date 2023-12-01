@@ -46,13 +46,11 @@ function run_PG!(
     model   = shared.tempering.path.target.model
     β       = Pigeons.find_log_potential(replica, shared.tempering, shared).beta
     tpg     = TemperedPG(β, explorer.n_particles, explorer.ess_threshold)
-    sampler = DynamicPPL.Sampler(tpg, model)
+    sampler = DynamicPPL.Sampler(tpg)
     state   = last(DynamicPPL.initialstep(rng, model, sampler, vi))
     for _ in 2:explorer.n_refresh
         state = last(AbstractMCMC.step(rng, model, sampler, state))
     end
-    error("""TODO: update vi=replica.state with state.vi:
-    - replica.state=$(replica.state)
-    - state.vi=$(state.vi)
-    """)
+    replica.state = state.vi
+    return
 end
