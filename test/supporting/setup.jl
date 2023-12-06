@@ -5,7 +5,6 @@ using Test
 using Distributions
 using DynamicPPL
 using LinearAlgebra
-using MPI
 using MPIPreferences
 using Pigeons
 using SplittableRandoms
