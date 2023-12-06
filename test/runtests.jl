@@ -1,3 +1,6 @@
+# test against the latest dev version of Pigeons
+using Pkg; Pkg.add(name="Pigeons",rev="main")
+
 using Test
 using DynamicPPL
 using Pigeons
