@@ -29,15 +29,14 @@ end
 function Pigeons.initialization(
     inp::Pigeons.Inputs{T, V, E}, rng::AbstractRNG, ::Int
     ) where {T <: Pigeons.TuringLogPotential, V, E <: TPGExplorer}
-    DynamicPPL.VarInfo(rng, inp.target.model)
+    DynamicPPL.VarInfo(rng, inp.target.model) # keep in sync with default_varinfo: https://github.com/TuringLang/DynamicPPL.jl/blob/11a75fffe3737a5ce06407444a81d588c3b4e188/src/sampler.jl#L70
 end
 
 # avoid the default Pigeons method which calls the default `initialization` (and thus `link`s)
 function Pigeons.sample_iid!(
     log_potential::Pigeons.TuringLogPotential, replica, ::Pigeons.Shared{T,E}
     ) where {T, E <: TPGExplorer}
-    replica.state = DynamicPPL.VarInfo(replica.rng, log_potential.model)
-
+    replica.state = DynamicPPL.VarInfo(replica.rng, log_potential.model) # keep in sync with the varinfo in `initialization`
 end
 
 # dispatch step on the type of replica.state
