@@ -8,6 +8,7 @@ using DynamicPPL: DynamicPPL
 using Libtask: Libtask
 using Turing: Turing
 using Pigeons: Pigeons
+using Random: AbstractRNG
 
 include("TemperedPG.jl")
 

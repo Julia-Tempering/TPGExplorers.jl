@@ -5,4 +5,5 @@
 .vscode/
 Manifest.toml
 temp.jl
+results/
 
