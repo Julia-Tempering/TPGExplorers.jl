@@ -10,6 +10,9 @@ using Turing: Turing
 using Pigeons: Pigeons
 using Random: AbstractRNG
 
+export TPGExtractor
+include("extractor.jl")
+
 include("TemperedPG.jl")
 
 export TPGExplorer
