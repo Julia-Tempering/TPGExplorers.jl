@@ -20,7 +20,10 @@ if VERSION < v"1.11"
                         dependencies = [Distributions, DynamicPPL, LinearAlgebra, TPGExplorers, pigeons_test_turing_models_path],
                         n_local_mpi_processes = n_mpis,
                         n_threads = 2,
-                        mpiexec_args = extra_mpi_args()))
+                        mpiexec_args = extra_mpi_args()
+                )
+            )
             @test true
         end
     end
+end

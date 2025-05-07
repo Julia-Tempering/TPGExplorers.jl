@@ -16,7 +16,7 @@
 
     @testset "check against SliceSampler" begin
         pt_ss = pigeons(target=target, n_chains=7, record=record, n_rounds = 8)
-        @test abs(stepping_stone(pt)-stepping_stone(pt_ss)) < 0.3
+        @test isapprox(stepping_stone(pt), stepping_stone(pt_ss), rtol=0.15)
         @test isapprox(Pigeons.global_barrier(pt), Pigeons.global_barrier(pt_ss), rtol=0.1)
     end
 end
