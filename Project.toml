@@ -13,3 +13,7 @@ Libtask = "6f1fad26-d15e-5dc8-ae53-837a1d7b8c9f"
 Pigeons = "0eb8d820-af6a-4919-95ae-11206f830c31"
 Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
 Turing = "fce5fe82-541a-59a6-adf8-730c64b5f9a0"
+
+[compat]
+Turing = "0.35.4"
+
