@@ -1,7 +1,7 @@
 # TPGExplorers.jl
 
-[![Build Status](https://github.com/Julia-Tempering/TPGExplorers/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/Julia-Tempering/TPGExplorers/actions/workflows/CI.yml?query=branch%3Amain)
-[![Coverage](https://codecov.io/gh/Julia-Tempering/TPGExplorers/branch/main/graph/badge.svg)](https://codecov.io/gh/Julia-Tempering/TPGExplorers)
+[![Build Status](https://github.com/Julia-Tempering/TPGExplorers.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/Julia-Tempering/TPGExplorers.jl/actions/workflows/CI.yml?query=branch%3Amain)
+[![Coverage](https://codecov.io/gh/Julia-Tempering/TPGExplorers.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/Julia-Tempering/TPGExplorers.jl)
 
 *A Pigeons explorer leveraging the Turing Particle Gibbs sampler*.
 
