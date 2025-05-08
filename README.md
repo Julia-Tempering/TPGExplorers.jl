@@ -56,6 +56,10 @@ using Pigeons
 target = Pigeons.toy_turing_unid_target()
 pt = pigeons(target = target, explorer = TPGExplorer())
 ```
+By default, PG runs with 10 particles. You can change this using
+```julia
+pt = pigeons(target = target, explorer = TPGExplorer(n_particles=20))
+```
 If `traces` are required, you need to use our specialized extractor
 ```julia
 pt = pigeons(
