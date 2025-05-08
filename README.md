@@ -8,9 +8,9 @@
 ## Overview
 
 [Particle Gibbs (PG)](https://doi.org/10.1111/j.1467-9868.2009.00736.x) is an MCMC
-algorithm that is able to sample from arbitrary (valid) programs written in any
-universal probabilistic programming language (PPL), such as 
-[DynamicPPL](https://github.com/TuringLang/DynamicPPL.jl)---the
+algorithm that is able to sample from arbitrary (valid) programs written in
+[any Turing-complete probabilistic programming language (PPL)](https://proceedings.mlr.press/v33/wood14.html),
+such as [DynamicPPL](https://github.com/TuringLang/DynamicPPL.jl)---the
 language used by the Turing project. Indeed, Turing provides a 
 [`PG`](https://turinglang.org/docs/usage/sampler-visualisation/index.html#pg)
 sampler that implements the algorithm.
